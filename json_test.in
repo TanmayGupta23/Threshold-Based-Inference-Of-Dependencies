@@ -1,0 +1,72 @@
+{
+  "data": [
+    {
+      "traceID": "1",
+      "spans": [
+        {
+          "traceID": "1",
+          "spanID": "A1",
+          "operationName": "DoA",
+          "processID": "p1",
+          "startTime": 1,
+          "duration": 1000
+        },
+        {
+          "traceID": "1",
+          "spanID": "B1",
+          "operationName": "DoB",
+          "processID": "p1",
+          "startTime": 10,
+          "duration": 200
+        },
+        {
+          "traceID": "1",
+          "spanID": "C1",
+          "operationName": "DoC",
+          "processID": "p1",
+          "startTime": 300,
+          "duration": 600
+        }
+      ],
+      "processes": {
+      	"p1": {
+      		"serviceName":"hello1"
+      	}
+      }
+    },
+    {
+      "traceID": "2",
+      "spans": [
+        {
+          "traceID": "2",
+          "spanID": "B2",
+          "operationName": "DoB",
+          "processID": "p1",
+          "startTime": 700,
+          "duration": 600
+        },
+        {
+          "traceID": "2",
+          "spanID": "D2",
+          "operationName": "DoD",
+          "processID": "p1",
+          "startTime": 500,
+          "duration": 10000
+        },
+        {
+          "traceID": "2",
+          "spanID": "C2",
+          "operationName": "DoC",
+          "processID": "p1",
+          "startTime": 503,
+          "duration": 200
+        }
+      ],
+      "processes": {
+      	"p1": {
+      		"serviceName":"hello1"
+      	}
+      }
+    }
+  ]
+}
